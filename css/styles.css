@@ -38,18 +38,35 @@ body {
     font-family: Barlow, sans-serif;
 }
 
-p {
+main {
+    margin: 2rem;
+    padding: 2rem;
+}
 
+p {
+    font-size: 1.5rem;
 }
 
 h1 {
     font-family: Pangolin, Barlow, sans-serif;
-    font-weight: 900;
-    font-size: 5rem;
+    font-weight: bold;
+    font-size: 6rem;
+    padding: 0.7rem 2.5rem;
+    margin: 1rem;
+    
 }
 
 h2 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    
+}
 
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -71,19 +88,21 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #f3a712;
     color: #0a0908;
+    mix-blend-mode: screen;
 }
 
 nav {
     width: auto;
-    min-height: 6vh;
+    min-height: 5rem;
 }
 
 ul.mainNav {
     background-color: #f3a712;
     list-style-type: none;
     margin: 0;
-    padding: 2rem;
+    padding: 1rem 0rem;
     position: absolute;
     display: flex;
     justify-content: flex-start;
@@ -95,13 +114,46 @@ ul.mainNav {
 li.mainNavElement a{
     color: #0a0908;
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
     text-decoration: none;
+    font-size: 1.5rem;
 
 }
 
 li.mainNavElement a:hover{
     color: #346d9a;
+    font-weight: bold;
 }
 
+
+
+ul.footerNav {
+    background-color: #596f35;
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+li.footerNavElement {
+    margin: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+li.footerNavElement a {
+    text-decoration: none;
+    color: #0a0908;
+}
+
+li.footerNavElement a:hover {
+    font-weight: bold;
+}
 
