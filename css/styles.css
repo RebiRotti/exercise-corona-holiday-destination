@@ -157,3 +157,35 @@ li.footerNavElement a:hover {
     font-weight: bold;
 }
 
+/* hier definieren wir unseren Container */
+#BedeutungCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+}
+
+#BedeutungImg{
+    flex-grow: 1;
+
+}
+
+#Bedeutung{
+    flex-grow: 3;
+
+}
+
+.Empfehlung{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Liste{
+    /*padding: 10px;*/
+    margin: 10px;
+
+}
+
