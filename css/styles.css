@@ -195,7 +195,16 @@ li.footerNavElement a:hover {
 
 .tipp{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+}
+.small{
+    max-width: 20%;
+}
+
+.tipps{
+    justify-content: space-evenly;
+    display: flex;
 }
 
