@@ -158,7 +158,7 @@ li.footerNavElement a:hover {
 }
 
 /* hier definieren wir unseren Container */
-#BedeutungCont{
+#bedeutungCont{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -166,26 +166,36 @@ li.footerNavElement a:hover {
 
 }
 
-#BedeutungImg{
+#bedeutungImg{
     flex-grow: 1;
 
 }
 
-#Bedeutung{
+#bedeutung{
     flex-grow: 3;
 
 }
 
-.Empfehlung{
+.empfehlung{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.Liste{
+.liste{
     /*padding: 10px;*/
     margin: 10px;
 
+}
+
+.empfehlungen{
+    background-image: url("../img/cCanHandleTheHeat.jpg");
+}
+
+.tipp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
