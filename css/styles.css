@@ -1,11 +1,11 @@
-/ CSS HEX /
+/* / CSS HEX / */
 .dark-olive-green { color: #596f35; }
 .marigold { color: #f3a712; }
 .honolulu-blue { color: #346d9a; }
 .ivory { color: #f9f9ed; } 
 .rich-black-fogra-39 { color: #0a0908; }
 
-/ SCSS RGB /
+/* / SCSS RGB / */
 .dark-olive-green-rgba { color: rgba(89, 111, 53, 1); }
 .marigold-rgba { color: rgba(243, 167, 18, 1); }
 .honolulu-blue-rgba { color: rgba(52, 109, 154, 1); } 
@@ -45,13 +45,12 @@ main {
 
 p {
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     margin: 0;
 }
 
 li {
     font-size: 1.5rem;
-    padding: 2rem;
     margin: 0;
 }
 
@@ -178,18 +177,21 @@ li.footerNavElement a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     
 }
 
 #bedeutungImg{
     flex-grow: 1;
     order: 1;
+    flex-basis:80%;
 
 }
 
 #bedeutung{
     flex-grow: 3;
     order: 2;
+    margin-left: 3rem;
 
 }
 
@@ -216,33 +218,51 @@ li.footerNavElement a:hover {
 }
 
 
-.empfehlung{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.empfehlungen h2{
+    text-align: center;
+}
+
+.empfehlungen h3{
+    text-align: center;
+}
+
+.liste {
+    text-align: center;
 }
 
 
-/* .liste{
-    padding: 10px;
-    margin: 10px;
+.empfehlung {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
-} */
 
 .empfehlungen{
-    background-image: url("../img/virus.jpg");
-    height: 800px;
+    background-image: url("../img/background-yellow.jpg");
+    min-height: 25vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #f9f9ed;
-    
+    color: #596f35; 
+
+}
+
+.backgroundCol{
+    background-color: rgba(243, 167, 18, 0.3);
 }
 
 .empfehlungList {
     list-style-type: none;
+    margin-bottom: 3rem;
+    
+}
+
+.liste {
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: bold;
 }
 
 .tipp{
@@ -264,6 +284,9 @@ li.footerNavElement a:hover {
 .imgResponsive {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 1rem;
+ 
       
 }
 
