@@ -191,7 +191,10 @@ li.footerNavElement a:hover {
 
 .empfehlungen{
     background-image: url("../img/cCanHandleTheHeat.jpg");
-    background-size: 50vH;
+    background-size: cover;
+    background-position: center;
+    padding: 15% 5%;
+    
 }
 
 .tipp{
