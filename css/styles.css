@@ -39,12 +39,28 @@ body {
 }
 
 main {
-    margin: 2rem;
-    padding: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     font-size: 1.5rem;
+    padding: 2rem;
+    margin: 0;
+}
+
+li {
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin: 0;
+}
+
+.marg {
+    margin: 2rem;
+}
+
+.marginLeft {
+    margin-left: 2rem;
 }
 
 h1 {
@@ -59,14 +75,14 @@ h1 {
 h2 {
     font-size: 3rem;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     
 }
 
 h3 {
     font-size: 2rem;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
 }
 
 
@@ -162,19 +178,43 @@ li.footerNavElement a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
-
+    
 }
 
 #bedeutungImg{
     flex-grow: 1;
+    order: 1;
 
 }
 
 #bedeutung{
     flex-grow: 3;
+    order: 2;
 
 }
+
+@media screen and (max-width: 800px) {
+    #bedeutungCont{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #bedeutungImg {
+        flex-grow: 1;
+        order: 2;
+    
+    }
+    
+    #bedeutung{
+        flex-grow: 3;
+        order: 1;
+    
+    }
+
+}
+
 
 .empfehlung{
     display: flex;
@@ -183,18 +223,26 @@ li.footerNavElement a:hover {
     justify-content: flex-start;
 }
 
-.liste{
-    /*padding: 10px;*/
+
+/* .liste{
+    padding: 10px;
     margin: 10px;
 
-}
+} */
 
 .empfehlungen{
-    background-image: url("../img/cCanHandleTheHeat.jpg");
-    background-size: cover;
+    background-image: url("../img/virus.jpg");
+    height: 800px;
+    background-attachment: fixed;
     background-position: center;
-    padding: 15% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f9f9ed;
     
+}
+
+.empfehlungList {
+    list-style-type: none;
 }
 
 .tipp{
@@ -210,5 +258,12 @@ li.footerNavElement a:hover {
 .tipps{
     justify-content: space-evenly;
     display: flex;
+}
+
+
+.imgResponsive {
+    width: 100%;
+    height: auto;
+      
 }
 
