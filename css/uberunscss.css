@@ -1,0 +1,34 @@
+.margin-bottom {
+    margin-bottom: 0.5em;
+}
+.form-class label {
+    min-width: 40%;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 5px 0;
+}
+.form-class input {
+    min-width: 50%;
+    box-shadow: 1px 1px 5px #777;
+    padding: 3px;
+    display: inline-block;
+    border: 1px solid #999;
+    margin: 5px 0;
+}
+.btn-styling {
+    text-align: center;
+    margin: 15px;
+}
+.btn-styling .btn {
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: transparent;
+    box-shadow: 1px 1px 5px #777;
+}
+.img-round {
+    border-radius: 200px;
+    shape-outside: ellipse();
+    shape-margin: 0.5rem;
+    float: left;
+    margin: 0 15px 0 0;
+}
