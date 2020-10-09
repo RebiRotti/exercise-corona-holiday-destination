@@ -244,3 +244,96 @@ li.footerNavElement a:hover {
     padding-top: 10px;
 }
 
+
+li {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.marg {
+    margin: 2rem;
+}
+.marginLeft {
+    margin-left: 2rem;
+}
+#bedeutungImg{
+    flex-grow: 1;
+    order: 1;
+    flex-basis:80%;
+}
+#bedeutung{
+    flex-grow: 3;
+    order: 2;
+    margin-left: 3rem;
+}
+@media screen and (max-width: 800px) {
+    #bedeutungCont{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    #bedeutungImg {
+        flex-grow: 1;
+    }
+        order: 2;
+    
+    }
+    
+    #bedeutung{
+        flex-grow: 3;
+        order: 1;
+    
+}
+.empfehlungen h2{
+    text-align: center;
+}
+.empfehlungen h3{
+    text-align: center;
+}
+.liste {
+    text-align: center;
+}
+.empfehlung {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.empfehlungen{
+    background-image: url("../img/background-yellow.jpg");
+    min-height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #596f35; 
+}
+.backgroundCol{
+    background-color: rgba(243, 167, 18, 0.3);
+}
+.empfehlungList {
+    list-style-type: none;
+    margin-bottom: 3rem;
+}
+.liste {
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: bold;
+}
+.tipp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.small{
+    max-width: 20%;
+}
+.tipps{
+    justify-content: space-evenly;
+    display: flex;
+}
+.imgResponsive {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 1rem;
+}
